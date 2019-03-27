@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/jwmenguito/The-Maine-Lyrics-Bot.git"
   },
+  "scripts":{
+    "start": "node index.js"
+  },
   "author": "jpwmenguito",
   "license": "ISC",
   "bugs": {
