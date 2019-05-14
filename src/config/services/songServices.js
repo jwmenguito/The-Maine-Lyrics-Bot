@@ -9,6 +9,8 @@ const songs = song.split("***");
 //randomize
 const size = songs.length;
 var randomize = function(){
+    //var index = Math.floor(Math.random()*size-1);
+    
     return songs[Math.floor(Math.random()*size-1)]; //returns lyrics
 }
 var onLogin = function(){
