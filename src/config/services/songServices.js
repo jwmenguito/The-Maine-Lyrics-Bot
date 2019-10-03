@@ -8,10 +8,26 @@ const songs = song.split("***");
 
 //randomize
 const size = songs.length;
+var songList = [];
 var randomize = function(){
-    //var index = Math.floor(Math.random()*size-1);
-    
-    return songs[Math.floor(Math.random()*size-1)]; //returns lyrics
+    var index = Math.floor(Math.random()*size-1);
+    var size = songList.length;
+    // check first if index is already in songList
+    // keep on randomizing if index is already present in songList
+    while (songList.includes(index)) {
+      console.log("Randomizing new number");
+      index = Math.floor(Math.random()*size-1);
+    }
+    switch(size) {
+      case 20:
+              queue.shift();
+              break;
+      default:
+              queue.push(index);
+    }
+    console.log("Tweeting song line: "+index);
+    return songs[index];
+    //return songs[Math.floor(Math.random()*size-1)]; //returns lyrics
 }
 var onLogin = function(){
 
