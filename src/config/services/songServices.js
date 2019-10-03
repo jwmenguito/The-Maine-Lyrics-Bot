@@ -20,10 +20,10 @@ var randomize = function(){
     }
     switch(size) {
       case 20:
-              queue.shift();
+              songList.shift();
               break;
       default:
-              queue.push(index);
+              songList.push(index);
     }
     console.log("Tweeting song line: "+index);
     return songs[index];
