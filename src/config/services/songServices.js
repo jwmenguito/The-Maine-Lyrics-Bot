@@ -11,14 +11,14 @@ const size = songs.length;
 var songList = [];
 var randomize = function(){
     var index = Math.floor(Math.random()*size-1);
-    var size = songList.length;
+    var size2 = songList.length;
     // check first if index is already in songList
     // keep on randomizing if index is already present in songList
     while (songList.includes(index)) {
       console.log("Randomizing new number");
       index = Math.floor(Math.random()*size-1);
     }
-    switch(size) {
+    switch(size2) {
       case 20:
               songList.shift();
               break;
